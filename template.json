@@ -61,7 +61,7 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "packer-ubuntu-18.04-{{user `build_timestamp`}}"
+      "vm_name": "packer-senzing-demo-ubuntu-18.04-{{user `build_timestamp`}}"
     },
     {
       "type": "vmware-iso",
@@ -106,8 +106,8 @@
       "ssh_username": "vagrant",
       "ssh_wait_timeout": "10000s",
       "tools_upload_flavor": "linux",
-      "vm_name": "packer-ubuntu-18.04-{{user `build_timestamp`}}",
-      "vmdk_name": "packer-ubuntu-18.04-{{user `build_timestamp`}}",
+      "vm_name": "packer-senzing-demo-ubuntu-18.04-{{user `build_timestamp`}}",
+      "vmdk_name": "packer-senzing-demo-ubuntu-18.04-{{user `build_timestamp`}}",
       "vmx_data": {
         "cpuid.coresPerSocket": "1",
         "memsize": "1024",
@@ -150,10 +150,10 @@
       "keep_input_artifact": true,
       "override": {
         "virtualbox": {
-          "output": "packer-ubuntu-18.04-virtualbox-{{user `build_timestamp`}}.box"
+          "output": "packer-senzing-demo-ubuntu-18.04-virtualbox-{{user `build_timestamp`}}.box"
         },
         "vmware": {
-          "output": "packer-ubuntu-18.04-vmware-{{user `build_timestamp`}}.box"
+          "output": "packer-senzing-demo-ubuntu-18.04-vmware-{{user `build_timestamp`}}.box"
         }
       }
     }

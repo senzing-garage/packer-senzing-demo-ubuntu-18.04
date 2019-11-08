@@ -1,4 +1,4 @@
-# packer-ubuntu-18.04
+# packer-senzing-demo-ubuntu-18.04
 
 This repository is an example of how to build machine images using [Packer](https://www.packer.io/).
 
@@ -6,9 +6,26 @@ In this example, a
 Ubuntu 18.04 ISO image
 is used to create machine images for VMware and VirtualBox.
 
+The virtual machine runs the following processes:
+
+1. FIXME:
+1. FIXME:
+
 ## Build dependencies
 
 See [build dependencies](https://github.com/docktermj/KnowledgeBase/blob/master/build-dependencies/packer.md).
+
+### Prerequisite software
+
+The following software programs need to be installed:
+
+1. [git](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-git.md)
+1. [packer](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-packer.md)
+
+The following software programs **may** need to be installed:
+
+1. [vagrant](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-vagrant.md)
+1. [virtualbox](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-virtualbox.md)
 
 ## Build
 
@@ -49,15 +66,15 @@ make virtualbox-iso
 
 1. Choose VMX file
     1. VMware Workstation > File > Open...
-        1. Navigate to `.../packer-ubuntu-18.04/output-vmware-iso-nnnnnnnnnn/`
-        1. Choose `packer-ubuntu-18.04-nnnnnnnnnn.vmx`
+        1. Navigate to `.../packer-senzing-demo-ubuntu-18.04/output-vmware-iso-nnnnnnnnnn/`
+        1. Choose `packer-senzing-demo-ubuntu-18.04-nnnnnnnnnn.vmx`
 1. Optional: Change networking
-    1. Navigate to VMware Workstation > My Computer > packer-ubuntu-18.04-nnnnnnnnnn
-    1. Right click on "packer-ubuntu-18.04-nnnnnnnnnn" and choose "Settings"
+    1. Navigate to VMware Workstation > My Computer > packer-senzing-demo-ubuntu-18.04-nnnnnnnnnn
+    1. Right click on "packer-senzing-demo-ubuntu-18.04-nnnnnnnnnn" and choose "Settings"
     1. Choose "Network Adapter" > "Network Connection" > :radio_button: Bridged: Connected directly to the physical network
     1. Click "Save"
 1. Run image
-    1. Choose VMware Workstation > My Computer > packer-ubuntu-18.04-nnnnnnnnnn
+    1. Choose VMware Workstation > My Computer > packer-senzing-demo-ubuntu-18.04-nnnnnnnnnn
     1. Click "Start up this guest operating system"
 1. Username: vagrant  Password: vagrant
 
@@ -66,7 +83,7 @@ make virtualbox-iso
 ### Add to library
 
 ```console
-vagrant box add --name="packer-ubuntu-18.04-virtualbox" ./packer-ubuntu-18.04-virtualbox-nnnnnnnnnn.box
+vagrant box add --name="packer-senzing-demo-ubuntu-18.04-virtualbox" ./packer-senzing-demo-ubuntu-18.04-virtualbox-nnnnnnnnnn.box
 ```
 
 ### Run
@@ -75,10 +92,10 @@ An example of how to run in a new directory.
 
 #### Specify directory
 
-In this example the `/tmp/packer-ubuntu-18.04` directory is used.
+In this example the `/tmp/packer-senzing-demo-ubuntu-18.04` directory is used.
 
 ```console
-export PACKER_UBUNTU_1804=/tmp/packer-ubuntu-18.04
+export PACKER_UBUNTU_1804=/tmp/packer-senzing-demo-ubuntu-18.04
 ```
 
 #### Initialize directory
@@ -89,7 +106,7 @@ Back up an old directory and initialize new directory with Vagrant image.
 mv ${PACKER_UBUNTU_1804} ${PACKER_UBUNTU_1804}.$(date +%s)
 mkdir ${PACKER_UBUNTU_1804}
 cd ${PACKER_UBUNTU_1804}
-vagrant init packer-ubuntu-18.04-virtualbox
+vagrant init packer-senzing-demo-ubuntu-18.04-virtualbox
 ```
 
 #### Enable remote login
@@ -141,10 +158,7 @@ Password: vagrant
 To remove Vagrant image, on host machine:
 
 ```console
-vagrant box remove packer-ubuntu-18.04-virtualbox
+vagrant box remove packer-senzing-demo-ubuntu-18.04-virtualbox
 ```
 
 ## References
-
-1. [Build dependencies](https://github.com/docktermj/KnowledgeBase/blob/master/build-dependencies/packer.md).
-1. [Bibliography](https://github.com/docktermj/KnowledgeBase/blob/master/bibliography/packer.md)
