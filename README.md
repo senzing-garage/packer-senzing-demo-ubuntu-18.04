@@ -11,18 +11,15 @@ The virtual machine runs the following processes:
 1. FIXME:
 1. FIXME:
 
-## Build dependencies
-
-See [build dependencies](https://github.com/docktermj/KnowledgeBase/blob/master/build-dependencies/packer.md).
-
 ### Prerequisite software
 
 The following software programs need to be installed:
 
 1. [git](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-git.md)
+1. [make](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-make.md)
 1. [packer](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-packer.md)
 
-The following software programs **may** need to be installed:
+The following software programs *may* need to be installed:
 
 1. [vagrant](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-vagrant.md)
 1. [virtualbox](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-virtualbox.md)
@@ -45,7 +42,7 @@ export PACKER_CACHE_DIR=~/packer_cache
 ### Build all versions
 
 ```console
-make
+make all
 ```
 
 ### Build specific version
