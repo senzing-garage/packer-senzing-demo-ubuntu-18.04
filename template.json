@@ -1,6 +1,7 @@
 {
   "variables": {
-    "build_timestamp": "{{timestamp}}"
+    "build_timestamp": "{{timestamp}}",
+    "senzing_accept_eula": "{{ env `SENZING_ACCEPT_EULA`}}"
   },
   "builders": [
     {
@@ -130,6 +131,8 @@
             "scripts/base.sh",
             "scripts/vagrant.sh",
             "scripts/virtualbox.sh",
+            "scripts/apt-installs.sh",
+            "scripts/senzing.sh",
             "scripts/cleanup.sh"
           ]
         },
@@ -138,6 +141,8 @@
             "scripts/base.sh",
             "scripts/vagrant.sh",
             "scripts/vmware.sh",
+            "scripts/apt-installs.sh",
+            "scripts/senzing.sh",
             "scripts/cleanup.sh"
           ]
         }
