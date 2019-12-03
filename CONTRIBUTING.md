@@ -83,7 +83,7 @@ The variables are used throughout the installation procedure.
 
 ```console
 export GIT_ACCOUNT=senzing
-export GIT_REPOSITORY=senzing-repository-template
+export GIT_REPOSITORY=packer-senzing-demo-ubuntu-18.04
 ```
 
 Synthesize environment variables.

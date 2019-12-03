@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
-
 # Software dependencies
 
 apt-get -y install \
-    curl
+    curl \
+    python3-pip
+
+pip3 install \
+    confluent-kafka \
+    pika
 
 # Copy python script to /usr/local/bin
 
