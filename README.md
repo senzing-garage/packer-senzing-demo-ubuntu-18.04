@@ -1,6 +1,14 @@
 # packer-senzing-demo-ubuntu-18.04
 
+## :warning: Repository in abeyance
+
+## Synopsis
+
+:warning: This is incomplete work -- and probably doesn't full work.
+
 This repository is an example of how to build machine images using [Packer](https://www.packer.io/).
+
+## Overview
 
 In this example, a
 Ubuntu 18.04 ISO image
@@ -11,7 +19,7 @@ The virtual machine runs the following processes:
 1. FIXME:
 1. FIXME:
 
-### Prerequisite software
+## Prerequisite software
 
 The following software programs need to be installed:
 
