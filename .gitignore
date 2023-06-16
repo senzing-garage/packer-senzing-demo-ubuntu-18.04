@@ -1,5 +1,10 @@
 # Cache objects
 packer_cache/
 
+# Output directories
+output-*/
+
 # For built boxes
 *.box
+
+.history
