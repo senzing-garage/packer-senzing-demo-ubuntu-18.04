@@ -1,10 +1,14 @@
 # packer-senzing-demo-ubuntu-18.04
 
-## :warning: Repository in abeyance
+## :no_entry: Deprecated
+
+This repository was simply exploratory.
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 ## Synopsis
 
-:warning: This is incomplete work -- and probably doesn't full work.
+:warning: This is incomplete work -- and probably doesn't fully work.
 
 This repository is an example of how to build machine images using [Packer](https://www.packer.io/).
 
